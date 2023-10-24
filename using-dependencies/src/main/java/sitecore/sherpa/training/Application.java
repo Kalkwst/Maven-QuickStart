@@ -17,8 +17,8 @@ public class Application {
         System.out.println("Word count: "+count);
     }
 
-    public int countWords(String words){
+    public static int countWords(String words){
         String[] tokens = StringUtils.split(words, ' ');
-        return (tokens == null) ? 0 : tokens.Length;
+        return (tokens == null) ? 0 : tokens.length;
     }
 }
